@@ -7,8 +7,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     iputils-ping libacl1 liblz4-tool locales python3 python3-git \
     python3-jinja2 python3-pexpect python3-pip python3-subunit socat \
     texinfo unzip wget xz-utils zstd ca-certificates curl rsync sudo ripgrep \
-    bc bison flex libssl-dev libncurses-dev lzop u-boot-tools \
-    dosfstools mtools parted device-tree-compiler zip time vim-tiny \
+    bc bison flex libssl-dev libncurses-dev lzop u-boot-tools tmux \
+    dosfstools mtools parted device-tree-compiler zip time vim-tiny libtinfo5 \
     && locale-gen en_US.UTF-8 && rm -rf /var/lib/apt/lists/*
 RUN groupadd -g ${GROUP_ID} builder \
     && useradd -m -u ${USER_ID} -g ${GROUP_ID} -s /bin/bash builder
