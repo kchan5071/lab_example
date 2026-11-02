@@ -7,4 +7,5 @@ do_image_wic[depends] += "lab-bootconf:do_deploy"
 
 IMAGE_FSTYPES += "wic wic.bmap"
 WKS_FILE = "lab-sd.wks"
+WKS_FILES = "lab-sd.wks"
 IMAGE_BOOT_FILES = "boot.bin;BOOT.BIN zImage system.dtb extlinux.conf;extlinux/extlinux.conf"
